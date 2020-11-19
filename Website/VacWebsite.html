@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.google.com/"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    alert($("google").attr("href"));
+  });
+});
+</script>
+<title>Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: black;
+  color: pink;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color:yellow;
+  color: black;
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: grey;
+  padding: 20px;
+}
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+} 
+    
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body> 
+    <p><a href="https://www.google.com" id="google">Google.com</a></p>
+
+<button>Find us on Google!</button>
+    <div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">25% discount on purchase of 400rs and above!</h4>
+</div>
+    
+<div class="header">
+  <h1>S-Square Gourmet</h1>
+  <p>Hungry? Let's grab something to eat!</p>
+</div>
+<div class="navbar">
+  <a href="#">Help</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+</div>
+    <marquee>A website for all foodies!! </marquee>
+    
+    
+  
+  <div class="main">
+    <h3>If life gives you lemons, make some kind of fruity juice!</h3>
+    <div class="col-left">
+      <img src="Photos/Glass.jpg" width="460" height="345"  alt="My page" >
+        <h4> The darker the berry, the sweeter the juice! So here's our chilled blueberry lemonade to refresh you! </h4>
+      </div>
+    </div>
+      <div class="main">
+          <h3>It says.. Milk and Coffee helps to boast up your energy!</h3>
+          <div class="col-left">
+              <img src="Photos/00100dPORTRAIT-00100-BURST20190222160908939-COVER.jpg" width="345" height="460">
+              <h4> Here's our best milkmade drinks namely Cold Coffee Crave and Vanilla Vacation.</h4>
+          </div>
+    </div>
+    <div class="main">
+        <h3>Hungry and thirsty? Soup solves both problems at once!</h3>
+        <div class="col-left">
+            <img src="Photos/IMG-20190701-172627-541.jpg" width="360" height="300">
+            <img src="Photos/IMG-20190704-235807-395.jpg" width="360" height="300">
+            <h4>Presenting our spicy Manchow soup and Lung-fung soup with a cloudy texture. </h4>
+        </div>
+    </div>
+    <div class="main">
+        <h3>It's a break? Let's grab a Sandwich</h3>
+        <img src="Photos/IMG-20191127-190946.jpg" width="300" height="280">
+        <h4>A nice blend of chicken assorted pepper, jalapenos, olives with creamy paprika mayo!</h4>
+    </div>
+    <div class="main">
+        <h3>A salad is not a meal, it is a style!</h3>
+        <img src="Photos/IMG-20191127-190306.jpg" width="350" height="200">
+        <h4>Caesar Salad. This salad is available in veg and non-veg variant as per your taste.</h4>
+    </div>
+    
+    <h2>Feedback</h2>
+        
+        
+        <div class="container">
+        <form>
+            <div class="row">
+            <div class="col-45">
+                <label for="fname">Your Name</label>
+                </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="yourname" placeholder="Your name">
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label for="contactno">Contact Number</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="contactno" name="Contact Number" placeholder="Your contact number">
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-75">
+                <label for="Reviews">Reviews</label>
+                </div>
+            <div class="col-75">
+                <textarea id="Reviews" name="Reviews" placeholder="Write something..." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+            <input type="submit" value="Submit">
+            </div>
+            </form>
+</body>
+    </html>
+    
